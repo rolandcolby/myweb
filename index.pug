@@ -1,0 +1,249 @@
+html(lang="es")
+	head
+		
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+
+		title Portfolio | Roland Colby - Front-end Developer
+		meta(charset='UTF-8')
+		meta(http-equiv='X-UA-Compatible' content='IE=edge,chrome=1')
+		meta(name='viewport' content='width=device-width, initial-scale=1.0')
+		link(rel='shortcut icon' href='https://ianlunn.co.uk/wp-content/themes/ianlunn2015/images/favicon.ico')
+		meta(name='description' content='Front-end Developer producing high quality responsive websites and exceptional user experience.')
+		meta(name='keywords' content='Roland, Colby, front end, front-end developer, front-end development, web designer, Portfolio, Front-End Web Developer, Web Developer, Front-End, HTML, CSS, JavaScript, Git, Github, PHP, WordPress')
+
+
+
+
+		//- LIBRERÍAS CSS
+		//------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+		//-Bootstrap 4.3.1
+		link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
+
+		//-Font-Awsome
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css")
+		
+		//-Animate
+		link(rel="stylesheet", href="https://daneden.github.io/animate.css/animate.min.css")
+		
+		//-Propio de esta página
+		link(rel="stylesheet", href="assets/css/style.css")
+
+		//-Canonical
+		link(rel="canonical" href="http://www.rolandcolby.tk/")
+
+	body
+
+		div#loader.introLoading.introLoader.simpleLoader.theme-light(style="z-index: 999999999; bottom: 729px; display: none;")
+
+
+		
+		//-STICKY MENU
+		//------------------------------------------------------------------------------------------------------------------------------------------------------------
+		div#menu.menu.container-fluid.fixed
+			div.row
+				div#logodiv.col-6
+					h1#logochico {rolandcolby}
+				
+				div#menudiv.col-6
+					label.menu-h
+						input#menuchk(type="checkbox" checked)
+						div
+							span
+							span
+			div#menu-links.d-none
+				div.row.centrado
+					a.link(href="#cabecera") HOME
+				div.row.centrado
+					a.link(href="#sobremi") ABOUT
+				div.row.centrado
+					a.link(href="#portfolio") PORTFOLIO
+				div.row.centrado
+					a.link(href="#servicios") SERVICES
+				div.row.centrado
+					a.link(href="#mislinks") HIRE ME
+				div.row.centrado
+					a.link(href="#pie") CONTACT
+		//-HEADER
+		//------------------------------------------------------------------------------------------------------------------------------------------------------------
+		div#cabecera.container-fluid
+			div.container.section.py-5
+				div#header.row.centrado
+					img#logo.py-5(src="assets/img/logo.svg")
+				p.txtjustify The web page represents you on the internet, it is your image, it is the first impression you are going to cause and it not only needs a beautiful appearance but also a correct organization of the content, it must be visible on all types of devices and transmit the spirit of the company , person or project to which it is dedicated.
+					b.txtjustify  I know the importance of my work and the importance of yours, let's work together to achieve success.
+
+		//-ABOUT & PORTFOLIO
+		//------------------------------------------------------------------------------------------------------------------------------------------------------------
+		div.container-fluid 
+			div.row
+				div#sobremi.container.section.py-3.col-sm-12.col-lg-6
+					div.caja
+
+						//- ABOUT-------------------------------------------------------------------------------------------------------------------------------------
+						
+						div.row.centrado.py-5
+							img.titleicon.inv(src="https://image.flaticon.com/icons/svg/159/159772.svg")
+							h2.titulo ABOUT
+						div.row.centrado
+							img#avatar(src="assets/img/mi-avatar.jpg")
+						div#midescripcion.row
+							h3.txtjustify(style="font-size:16px") Hello! I'm 
+								b Roland Colby
+							p.txtjustify  I'm designer and Front-End web developer, which means that I take care of the visual part of web pages and their interactivity. I can make portfolios, pages of products or services, promotion of applications, documentation pages, and others simple but powerfull websites.
+						div.row.centrado
+							p.txtjustify.py-4 ¡Follow me!
+						div#misredes.row.centrado
+							div#insta
+								img.social(src="assets/img/insta.png")
+							div#face
+								img.social(src="assets/img/fb.png")
+							div#twit
+								img.social(src="assets/img/twitter.png")
+				
+
+
+
+				div#portfolio.container.section.py-3.col-sm-12.col-lg-6
+					div.caja
+
+						//- PORTFOLIO---------------------------------------------------------------------------------------------------------------------------------
+						div.row.centrado.py-5
+							img.titleicon.inv(src="https://image.flaticon.com/icons/svg/259/259508.svg")
+							h2.titulo PORTFOLIO
+						div#midescripcion.row
+							p.txtjustify Below are some of my works, graphic experiments and tests for future web page developments; I have decided to divide this section in two because some content is exclusive to only one of these disciplines.
+						div#btn-graphic.row.centrado
+							img.boton(src="assets/img/btn-03.svg")
+						div#btn-webdev.row.centrado
+							img.boton(src="assets/img/btn-04.svg")
+
+		//-SERVICE
+		//------------------------------------------------------------------------------------------------------------------------------------------------------------
+		div#servicios.container-fluid
+			div.container.section
+
+				div.row.centrado.py-5
+					img.titleicon(src="https://image.flaticon.com/icons/svg/1835/1835948.svg")
+					h2.txtblack.titulo SERVICES
+				div.row.centrado
+					div.servcard.centrado.container.row
+						div#icon1.icon.centrado.col-4
+							img.imagen(src="assets/img/graphic-design.svg")
+						div#desc1.desc.col-8
+							p Graphic design, to add icons, backgrounds, SVG’s, among others.
+						div#soft1.soft.centrado.col-12
+							p Use: Illustrator / Photoshop / Animate
+					div.servcard.centrado.container.row
+						div#icon2.icon.centrado.col-4
+							img.imagen(src="assets/img/UX-UI.svg")
+						div#desc2.desc.col-8
+							p User interface design and user experience (UI / UX) with HTML5 and CSS3.
+						div#soft2.soft.centrado.col-12
+							p Use: Pug / Sass / Bootstrap 4
+					div.servcard.centrado.container.row
+						div#icon3.icon.centrado.col-4
+							img.imagen(src="assets/img/coding.svg")
+						div#desc3.desc.col-8
+							p JavaScript programming to provide incredible interactivity and effects..
+						div#soft3.soft.centrado.col-12
+							p Use: JQuery / TypeScript / Angula 2+
+					div.servcard.centrado.container.row
+						div#icon4.icon.centrado.col-4
+							img.imagen(src="assets/img/SEO.svg")
+						div#desc4.desc.col-8
+							p SEO optimization to be the first option in search engines.
+						div#soft4.soft.centrado.col-12
+							p Use: Lighthouse / Moz / Ubersuggest
+		
+		//-INTERESTING LINKS
+		//------------------------------------------------------------------------------------------------------------------------------------------------------------
+		//- div.container-fluid#mislinks
+		//- 	div.container.section
+
+		//- 		div.row.centrado.py-5
+		//- 			img.titleicon(src="https://image.flaticon.com/icons/svg/159/159774.svg")
+		//- 			h2.txtblack.titulo OTHER THINGS
+
+		
+		//-FOOTER CON CONTACTO
+		//------------------------------------------------------------------------------------------------------------------------------------------------------------
+		div.container-fluid#footer
+			div#pie.container.section
+
+				div.row.centrado.py-5
+					img.titleicon.inv(src="https://image.flaticon.com/icons/svg/259/259624.svg")
+					h2.titulo CONTACT
+				div.row.centrado
+					img.titleicon2.inv(src="https://image.flaticon.com/icons/svg/159/159036.svg")
+					h3.txtjustify.contact rolandm.colby@gmail.com
+				div.row.centrado
+					img.titleicon2.inv(src="https://image.flaticon.com/icons/svg/159/159052.svg")
+					h3.txtjustify.contact +549 3329 526177
+		
+		//- copyright ----------------------------------------------------------
+		div.container-fluid.copyr
+			div.container.section
+				div.row.centrado.py-3
+					p.copyr Design by:&nbsp
+					b.copyr Roland M Colby&nbsp
+					p.copyr © Copyright 2019 - All rights reserved -&nbsp
+					b.copyr Website made with 💖&nbsp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		//LIBRERÍAS JAVASCRIPT
+		//------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+		//JQuery 3.3.1
+		script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
+
+		//Popper 1.14.7
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
+
+		//Bootstrap 4.3.1
+		script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
+
+		//JQuery 1.11.1
+		script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+
+		//WOW
+		script(src="http://mynameismatthieu.com/WOW/dist/wow.min.js")
+
+		//Propio de esta página
+		script(src="assets/js/script.js")

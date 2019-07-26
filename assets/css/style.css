@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css?family=Patua+One&display=swap');
+
+/* RESET */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+*,a {
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	text-decoration:none;
+	color:white;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+/* GENERAL */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.section {
+	width: 100%;
+	height: auto;
+}
+
+/* STICKY MENU */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.fixed { 
+	position:fixed;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#menu {
+	transition: all 0.5s;
+}
+
+.menu {
+	width:100%;
+	height: 55px;
+	background: black;
+	color: white;
+	z-index: 1;
+}
+
+.menu-expand {
+	width:100%;
+	height: 100vh;
+	background: rgba(0,0,0,0.8);
+	color: white;
+	z-index: 1;
+}
+
+#logodiv {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#logochico {
+	font-family: 'Patua One', cursive;
+	font-size: 20px;
+	padding:0px;
+	margin:0px;
+}
+
+#menudiv {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+    align-items: center;
+    justify-content: flex-end;
+	
+}
+
+
+
+/*HAMBURGER MENU*/
+/*--------------------------------------*/
+
+.menu-h {
+  --front: #000;
+  --back: linear-gradient(#FC3636,#FC368A);
+  --icon: white;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  width: 48px;
+  height: 48px;
+  position: relative;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.menu-h input {
+  display: none;
+}
+.menu-h input + div span {
+  --rotateY: 0deg;
+  --background: var(--front);
+  -webkit-transform: rotateY(var(--rotateY));
+          transform: rotateY(var(--rotateY));
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--background);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transition: -webkit-transform 0.6s cubic-bezier(0.2, 0.64, 0.48, 1.24);
+  transition: transform 0.6s cubic-bezier(0.2, 0.64, 0.48, 1.24);
+  transition: transform 0.6s cubic-bezier(0.2, 0.64, 0.48, 1.24), -webkit-transform 0.6s cubic-bezier(0.2, 0.64, 0.48, 1.24);
+}
+
+.menu-h input + div span:before, .menu-h input + div span:after {
+  --rotate: 0deg;
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  border-radius: 1px;
+  top: 50%;
+  left: 50%;
+  background: var(--icon);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translate(-50%, -50%) rotate(var(--rotate)) translateZ(6px);
+          transform: translate(-50%, -50%) rotate(var(--rotate)) translateZ(6px);
+}
+.menu-h input + div span:first-child {
+  --background: var(--back);
+}
+.menu-h input + div span:first-child:before {
+  --rotate: -45deg;
+}
+.menu-h input + div span:first-child:after {
+  --rotate: 45deg;
+}
+.menu-h input + div span:last-child {
+  --rotateY: 180deg;
+}
+.menu-h input + div span:last-child:before {
+  box-shadow: 0 -5px 0 var(--icon), 0 5px 0 var(--icon);
+}
+.menu-h input + div span:last-child:after {
+  display: none;
+}
+.menu-h input:checked + div span:first-child {
+  --rotateY: -180deg;
+}
+.menu-h input:checked + div span:last-child {
+  --rotateY: 0deg;
+}
+
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+#menu-links {
+	text-decoration: none;
+	font-size: 45px;
+	font-weight: bolder;
+	color:white;
+	margin:25px;
+	
+}
+
+.link {
+	transition: all 0.3s;
+}
+
+.link:hover {
+	transform: scale(1.7);
+	color:#ffffff;
+	text-shadow: 0 0 10px #ffffff;
+}
+
+
+/* HEADER */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#cabecera {
+	width: 100%;
+	background-image: linear-gradient(
+      rgba(0, 199, 215, 1),
+      rgba(0, 215, 160, 0.5)
+    ), url(https://cdn.pixabay.com/photo/2014/05/02/21/50/home-office-336377_640.jpg); 
+    background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 100vh;
+	height: auto;
+	box-sizing: border-box;
+	position:relative;
+	color:white;
+	font-size: 14px;
+}
+
+#header {
+
+}
+
+#logo{
+	width:500px;
+	align-self: center;
+	filter: drop-shadow(2px 4px 6px black);
+	transition: 0.3s;
+}
+
+#logo:hover {
+	filter: drop-shadow(19px 14px 16px black);
+	transform: scale(1.01);
+}
+
+/* ABOUUT */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#sobremi {
+	width: 100%;
+	height: auto;
+	background-image: linear-gradient(
+      rgba(0,0,0, 1),
+      rgba(0,0,0, 0.01)
+    ), url(footer-bg.jpg); 
+    background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 100vh;
+	color:white;
+	font-size: 14px;
+}
+
+#avatar {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	transition: all 0.3s;
+}
+
+#avatar:hover {
+	transform: rotate(10deg);
+}
+
+#midescripcion {
+	padding: 0 20px 20px 20px;
+}
+
+#misredes {
+
+}
+
+.social {
+	width:60px;
+	height:60px;
+	margin:0 15px 20px 15px;
+	transition: all 0.2s;
+}
+
+.social:hover {
+	transform: scale(1.5);
+	cursor: pointer;
+}
+
+/* PORTFOLIO */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#portfolio {
+	background-image: linear-gradient(
+      rgba(0, 199, 215, 1),
+      rgba(0, 100, 215, 1)
+    ); 
+    background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 100vh;
+	color: white;
+	font-size: 14px;
+}
+
+.boton {
+	width:375px;
+	margin:-10;
+	transition: all 0.3s;
+}
+
+.boton:hover {
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+#btn-graphic {
+	padding:0;
+	margin:0;
+}
+
+#btn-webdev {
+	padding:0;
+	margin:0;
+}
+
+/* SERVICE */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.txtblack{
+	color:black;
+}
+
+#servicios {
+	width: 100%;
+	background-image: linear-gradient(
+      rgba(255,255,255, 1),
+      rgba(255,255,255, 0.3)
+    ), url('http://www.dukece.com/wp-content/uploads/2019/05/agenda-analysis-business-plan-990818.jpg'); 
+    background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: auto;
+	box-sizing: border-box;
+	position:relative;
+	color:black;
+	font-size: 14px;
+}
+
+.servcard {
+	width:100%;
+	border-radius: 2em;
+	padding: 0px;
+	max-width: 400px;
+	margin: 25px;
+	transition: all 0.3s;
+}
+
+.servcard:hover {
+  -webkit-box-shadow: 0 15px 15px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 15px 15px rgba(0,0,0,0.5);
+  box-shadow: 0 15px 15px rgba(0,0,0,0.5);
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-2deg) scale(1.1);
+}
+
+.icon {
+	width:100%;
+	height: 120px;
+	border-radius: 2em 0 0 0;
+}
+
+.desc {
+	padding: 20px;
+	width:100%;
+	height: 120px;
+	border-radius: 0 2em 0 0;
+	color: white;
+	font-size: 14px;
+}
+
+.soft {
+	width:100%;
+	height: 30px;
+	border-radius: 0 0 2em 2em;
+	color: white;
+	font-size: 13px;
+	margin:0px;
+	padding: 0px;
+	background-image: linear-gradient(#474747,#000000);
+}
+
+.imagen {
+	width:60px;
+	height: 60px;
+}
+
+#icon1{
+	background-image: linear-gradient(#9a25ff,#967AFF);
+background-color: ;
+}
+#desc1{
+	background-image: linear-gradient(#c57aff,#967AFF);
+background-color: ;
+}
+
+#icon2{
+	background-image: linear-gradient(#00a8c8,#2BFFE4);
+background-color: ;
+}
+#desc2{
+	background-image: linear-gradient(#2bbdff,#2BFFE4);
+background-color: ;
+}
+
+#icon3{
+	background-image: linear-gradient(#00c347,#31E900);
+background-color:2;
+}
+#desc3{
+	background-image: linear-gradient(#00e97f,#31E900);
+background-color: ;
+}
+
+#icon4{
+	background-image: linear-gradient(#ffaf4b,#FF8B4B);
+background-color: ;
+}
+#desc4{
+	background-image: linear-gradient(#ffdc41,#FF8441);
+background-color: ;
+}
+
+/* LINKS */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#mislinks {
+	width: 100%;
+	background-image: linear-gradient(
+      rgba(255,255,255, 1),
+      rgba(255,255,255, 1),
+      rgba(255,255,255, 0.2)
+    ), url(links-bg.png); 
+    background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 100vh;
+	height: auto;
+	box-sizing: border-box;
+	position:relative;
+	color:white;
+	font-size: 14px;
+}
+
+/* FOOTER */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#footer {
+	width: 100%;
+	background-image: linear-gradient(
+      rgba(0,0,0, 1),
+      rgba(0,0,0, 0.5)
+    ), url(footer-bg.jpg); 
+    background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 50vh;
+	height: auto;
+	box-sizing: border-box;
+	position:relative;
+	color:white;
+	font-size: 14px;
+}
+
+.contact {
+	font-size: 20px;
+}
+
+.titleicon2 {
+	width:25px;
+	height:25px;
+	margin-bottom: .5rem;
+    margin-right: 5;
+    background: #FF7200;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.copyr{
+	font-size: 14px;
+	background-color: black;
+	color:#535353;
+	text-align: center;;
+}
+
+/* ALINEACIONES */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.centrado {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.txtjustify {
+	text-align: justify;
+}
+
+/* scrollbar */
+/*---------------------------------------------------------------------------------------------*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(40deg,#8a05f1,#0380af,#16ff9e);
+    border-radius: 3em;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(45deg,#492bc1,#0a2b3e);
+  width:5px;
+  box-shadow: inset 0 0 2.5px 2px rgba(0,0,0,0.2);
+}
+
+
+/* EXTRAS */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*div {
+	border: 1px solid rgba(0,0,0,0.1);
+}*/
+
+.caja {
+	border-radius:2em;
+	padding:2px;
+}
+
+.titulo {
+	font-size: 35px;
+	font-weight: bolder;
+}
+
+.titleicon {
+	width:30px;
+	height:30px;
+	margin-bottom: .5rem;
+    margin-right: 5;
+}
+
+.inv{
+	filter: invert(100%);
+}
