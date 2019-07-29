@@ -206,8 +206,8 @@ p {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	min-height: 100vh;
-	height: auto;
+	max-height: 800px;
+	height: 100vh;
 	box-sizing: border-box;
 	position:relative;
 	color:white;
@@ -244,7 +244,8 @@ p {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	min-height: 100vh;
+	max-height: 800px;
+        height: 100vh;
 	color:white;
 	font-size: 14px;
 }
@@ -292,7 +293,8 @@ p {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	min-height: 100vh;
+	max-height: 800px;
+        height: 100vh;
 	color: white;
 	font-size: 14px;
 }
@@ -443,8 +445,8 @@ background-color: ;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	min-height: 100vh;
-	height: auto;
+	max-height: 800px;
+	height: 100vh;
 	box-sizing: border-box;
 	position:relative;
 	color:white;
